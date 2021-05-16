@@ -11,10 +11,30 @@ function showTime() {
     var h = today.getHours();
     var m = today.getMinutes();
     var s = today.getSeconds();
+    var d = today.getDay();
+    var day;
+    switch (d){
+        case 0:
+            day = "Pazartesi";
+        case 1:
+            day = "Salı";
+        case 2:
+            day = "Çarşamba";
+        case 3:
+            day = "Perşembe";
+        case 4:
+            day = "Cuma";
+        case 5:
+            day = "Cumartesi";
+        case 6:
+            day = "Pazar";
+    }
+        
+
     m = checkTime(m);
     s = checkTime(s);
     clck.innerHTML =
-    h + ":" + m + ":" + s;
+    h + ":" + m + ":" + s + " " + day;
     var t = setTimeout(showTime, 1000);
 }
 function checkTime(i) {
