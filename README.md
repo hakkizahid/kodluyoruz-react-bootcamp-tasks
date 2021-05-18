@@ -1,1 +1,1 @@
-# 90Pixel Akademi React Bootcamp
+# 90Pixel Akademi React.js Bootcamp
