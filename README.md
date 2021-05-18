@@ -1,1 +1,1 @@
-# javascript_hw
+# 90Pixel Akademi React Bootcamp
